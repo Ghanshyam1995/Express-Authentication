@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    
+    div.flex-container
+       div.layoutItem
+          ul
+            li 
+              a(href='/users')  
+                i.fa.fa-home.fa-2x 
+                span.nav-text Home
+            li
+              a  
+                i.fa.fa-user.fa-2x 
+                span.nav-text Users
+            li 
+              a  
+                i.fa.fa-list.fa-2x 
+                span.nav-text Home
+          
+       div.content
+           div.toolbar 
+              div.toolBarContent
+                  i.fa.fa-list.toc
+           block content
+    
