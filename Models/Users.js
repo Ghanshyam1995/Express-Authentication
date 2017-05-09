@@ -27,7 +27,7 @@ module.exports.createUser = function(newUser, callBack) {
     })
 }
 
-module.exports.getUserByUsername = function(username, password, callBack) {
+module.exports.userLogin = function(username, password, callBack) {
     sql.connect(config, (err) => {
         if (err) console.log(err);
 

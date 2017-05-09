@@ -97,10 +97,11 @@ a {
     font-size: 20px;
 }
 
-.layoutItem:hover {
+
+/*.layoutItem:hover {
     width: 250px;
     overflow: visible;
-}
+}*/
 
 .layoutItem .nav-text {
     position: relative;
