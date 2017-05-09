@@ -134,13 +134,6 @@ a {
     justify-content: center;
 }
 
-.input {
-    flex: 1;
-    margin-bottom: 15px;
-    border-radius: 0;
-    border-left-color: 2px blue solid;
-}
-
 .btn-primary {
     padding: 5px 5px;
     width: auto;
@@ -167,4 +160,9 @@ a {
 
 .error {
     color: red;
+}
+
+.container {
+    margin: 5% auto auto auto;
+    max-width: 600px;
 }
