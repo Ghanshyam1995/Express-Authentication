@@ -4,12 +4,7 @@ var passport = require("passport");
 var LocalStrategy = require("passport-local").Strategy;
 var User = require("../Models/Users");
 
-var Users = {
-    username: string,
-    email: string,
-    password: string,
-    Id: number
-}
+
 router.get('/register', (req, res) => {
     res.render('Register');
 });
@@ -34,7 +29,7 @@ router.post('/register', (req, res) => {
             errors: errors
         })
     } else {
-        var newUser = new Users({
+        var newUser = ({
             username: name,
             email: email,
             password: password
@@ -56,8 +51,8 @@ router.get('/Login', (req, res) => {
 });
 
 passport.use(new LocalStrategy(
-    function(username, password, done) {
-        User.getUserByUsername(username, function(err, user) {
+    function(email, password, done) {
+        User.getUserByUsername(email, password, function(err, user) {
             if (err)
                 throw err;
             if (!user)
