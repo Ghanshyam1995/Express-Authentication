@@ -7,7 +7,9 @@ $(function() {
             sideBarMode = false;
         else
             sideBarMode = true;
+
         $(".layoutItem").animate({ width: sideBarWidth }, 100);
+
     });
 
     $(".layoutItem").on('mouseover', function() {

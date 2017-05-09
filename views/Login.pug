@@ -6,6 +6,6 @@ block content
        if(error_msg)
           p #{error_msg}
        form.inputContainer(method='post' action='/users/Login')
-           input.input(type="text",placeholder="Email",name="email")
-           input.input(type="password",placeholder="Password",name="password")
+           input.form-control(type="text",placeholder="Email",name="email")
+           input.form-control(type="password",placeholder="Password",name="password")
            button.btn.btn-primary(type='submit') Login

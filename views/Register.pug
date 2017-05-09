@@ -4,9 +4,10 @@ block content
     if errors
       for error in errors
          p.error #{error.msg}
-    form.inputContainer(method='POST' action='/users/register')
-      input.input(type="text",placeholder="Name",name="name")
-      input.input(type="email",placeholder="Email",name="email")
-      input.input(type="password",placeholder="Password",name="password")
-      input.input(type="password",placeholder="Password",name="password2")
-      button.btn.btn-primary(type='submit') Register
+    div.container 
+       form.inputContainer(method='POST' action='/users/register')
+          input.input(type="text",placeholder="Name",name="name")
+          input.input(type="email",placeholder="Email",name="email")
+          input.input(type="password",placeholder="Password",name="password")
+          input.input(type="password",placeholder="Password",name="password2")
+          button.btn.btn-primary(type='submit') Register
